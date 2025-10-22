@@ -2,16 +2,6 @@
 
 A machine learning-based web application for predicting the glass transition temperature (Tg) of polymers and small molecules using two distinct approaches: physics-informed functional group features and automated SMILES-based predictions.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Dataset](#dataset)
-- [Methodology](#methodology)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Performance](#model-performance)
-- [Project Structure](#project-structure)
 
 ## 🔬 Overview
 
@@ -253,7 +243,7 @@ Glass-Transition-Temperature-Tg-Predictor/
 
 ### SMILES Format
 
-SMILES (Simplified Molecular Input Line Entry System) is a text notation for molecular structures:
+SMILES (Simplified Molecular Input Line Entry System) is a text notation for molecular structures, examples:
 - `CCO` = Ethanol (CH₃CH₂OH)
 - `CC(=O)C` = Acetone (CH₃COCH₃)
 - `C(C1C(C(C(C(O1)O)O)O)O)O` = Glucose
