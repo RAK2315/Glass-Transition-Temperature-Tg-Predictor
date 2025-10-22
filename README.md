@@ -2,6 +2,7 @@
 
 A machine learning-based web application for predicting the glass transition temperature (Tg) of polymers and small molecules using two distinct approaches: physics-informed functional group features and automated SMILES-based predictions.
 
+🌐 **Live Demo**: [https://glass-transition-temperature-tg-predictor.streamlit.app/](https://glass-transition-temperature-tg-predictor.streamlit.app/)
 
 ## 🔬 Overview
 
@@ -55,6 +56,8 @@ The dataset contains approximately **700 unique polymer compounds** with:
 - **Target Variable**: Glass transition temperature (Tg) in Kelvin
 - **SMILES Representations**: For structure-based predictions
 - **Literature References**: Traceability to original experimental sources
+
+**Dataset Source**: [Zenodo - Tg Dataset](https://zenodo.org/records/7319485)
 
 ### Data Composition
 
@@ -141,7 +144,7 @@ rdkit>=2023.3.1
 ### Running the Application
 
 ```bash
-streamlit run home.py
+streamlit run Home.py
 ```
 
 The application will open in your browser at `http://localhost:8501`
@@ -248,12 +251,11 @@ SMILES (Simplified Molecular Input Line Entry System) is a text notation for mol
 - `CC(=O)C` = Acetone (CH₃COCH₃)
 - `C(C1C(C(C(C(O1)O)O)O)O)O` = Glucose
 
-## 🙏 Acknowledgments
+## 📚 Resources
 
-- Dataset compiled from peer-reviewed polymer science literature
-- RDKit for molecular structure processing
-- Streamlit for the interactive web framework
-- scikit-learn for machine learning models
+- **Live Application**: [Streamlit App](https://glass-transition-temperature-tg-predictor.streamlit.app/)
+- **Dataset Source**: [Zenodo Repository](https://zenodo.org/records/7319485)
+- **SMILES Generator**: [Online Tool](https://www.cheminfo.org/flavor/malaria/Utilities/SMILES_generator___checker/index.html)
 
 ---
 
