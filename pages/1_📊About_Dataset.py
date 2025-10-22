@@ -102,13 +102,41 @@ else:
 # Dataset Summary Metrics
 # -------------------------------
 st.subheader("Dataset Summary")
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Number of Compounds", df_filtered.shape[0])
-col2.metric("Number of Features", df_filtered.shape[1])
+
+# First row for general metrics and Mean/Std Dev of Tg and Tm
+col1, col2, col3, col4, col5, col6 = st.columns(6) 
+
+col1.metric("Total Compounds", df_filtered.shape[0])
+col2.metric("Total Features", df_filtered.shape[1])
+
+# Tg Metrics (Mean and Median)
 if 'Tg' in df_filtered.columns:
     col3.metric("Mean Tg [K]", round(df_filtered['Tg'].mean(), 2))
+    col4.metric("Median Tg [K]", round(df_filtered['Tg'].median(), 2))
+
+# Tm Metrics (Mean and Median)
 if 'Tm' in df_filtered.columns:
-    col4.metric("Mean Tm [K]", round(df_filtered['Tm'].mean(), 2))
+    col5.metric("Mean Tm [K]", round(df_filtered['Tm'].mean(), 2))
+    col6.metric("Median Tm [K]", round(df_filtered['Tm'].median(), 2))
+
+st.subheader("Property Range (Min/Max)")
+colA, colB, colC, colD, colE, colF = st.columns(6)
+
+# Tg Metrics (Min and Max)
+if 'Tg' in df_filtered.columns:
+    colA.metric("Min Tg [K]", round(df_filtered['Tg'].min(), 2))
+    colB.metric("Max Tg [K]", round(df_filtered['Tg'].max(), 2))
+
+# Tm Metrics (Min and Max)
+if 'Tm' in df_filtered.columns:
+    colC.metric("Min Tm [K]", round(df_filtered['Tm'].min(), 2))
+    colD.metric("Max Tm [K]", round(df_filtered['Tm'].max(), 2))
+
+# Molecular Weight (M) Metrics (Mean, Median, Min, Max)
+if 'M' in df_filtered.columns:
+    colE.metric("Min M [g/mol]", round(df_filtered['M'].min(), 2))
+    colF.metric("Max M [g/mol]", round(df_filtered['M'].max(), 2))
+    
 
 # -------------------------------
 # Data Table
