@@ -259,4 +259,3 @@ SMILES (Simplified Molecular Input Line Entry System) is a text notation for mol
 
 ---
 
-**Note**: This tool is intended for research and educational purposes. Always validate predictions with experimental measurements for critical applications.
