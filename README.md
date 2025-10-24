@@ -4,7 +4,6 @@ A machine learning-based web application for predicting the glass transition tem
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-FF4B4B)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://glass-transition-temperature-tg-predictor.streamlit.app/)
 
 
