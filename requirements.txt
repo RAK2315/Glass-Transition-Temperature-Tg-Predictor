@@ -7,3 +7,4 @@ matplotlib==3.10.7
 rdkit==2025.9.1
 joblib==1.5.2
 altair==5.5.0
+lightgbm==4.6.0
